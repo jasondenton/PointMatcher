@@ -1,0 +1,6 @@
+model=card1a.pnt
+data=xmas1a.pnt
+sigma=5.0
+transform=projective
+instances=3
+scale=3.5;

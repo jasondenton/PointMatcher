@@ -1,0 +1,57 @@
+expr_sup.c: if (problem->model->image == NULL || problem->data->image == NULL)
+expr_sup.c:    mimg = img_load_pxm(problem->model->image);
+expr_sup.c:  fprintf(fout,"%s matched to %s",problem->model->name,problem->data->name);
+expr_sup.c:  if (problem->model->image == NULL || problem->data->image == NULL)
+expr_sup.c:    mimg = img_load_pxm(problem->model->image);
+keyfeat.c:  mc = problem->model->size;
+keyfeat.c:    expand_match(features[i],problem->model->size);
+lsearch.c:  modelx = problem->model->x;
+lsearch.c:  modely = problem->model->y;
+lsearch.c:    modelx = problem->model->x;
+lsearch.c:    modely = problem->model->y;
+lsearch.c:  if (sol->size != problem->model->size)
+lsearch.c:    expand_match(sol,problem->model->size);
+pmproblem.c:    problem->model->length[0] = dsc / problem->model->length[0];
+pmproblem.c:    problem->model->length[1] = dsc / problem->model->length[1];
+pmproblem.c:    sprintf(tmp,"%s_to_%s",problem->model->name,problem->data->name);
+pmproblem.c:  printf("Matching %s to %s\n\n",problem->model->name,problem->data->name);
+pmproblem.c:  printf("%s has %d points\n",problem->model->name,problem->data->size);
+pmproblem.c:  printf("%s has %d points\n",problem->data->name,problem->model->size);
+pmproblem.c:	  problem->model->name,problem->data->name);
+pmproblem.c:	  "%s has %d points<br>\n",problem->model->name,problem->model->size);
+pnteval.c:    problem->context_for_pair(problem->model->x[sol->m[i]],
+pnteval.c:			      problem->model->y[sol->m[i]],
+pnteval.c:    tx = model->x[mp];
+pnteval.c:    ty = model->y[mp];
+pnteval.c:  return (err/problem->sigma) + ((double) (model->size - pairings));
+pnteval.c:    problem->context_for_pair(problem->un_model->x[sol->m[i]],
+pnteval.c:			      problem->un_model->y[sol->m[i]],
+pntmatcher.c:  result = allocate_match(((PntMatchProblem)extra)->model->size);
+pntmatcher.c:  result = allocate_match(((PntMatchProblem)extra)->model->size);
+pntmatcher.c:      matches[i] = random_match(problem->model->size,problem->data->size,
+projective.c:  vterm *= max(model->length[0],model->length[1]);
+projective.c:  x[0] = pose[0] * model->lx + pose[1] * model->ly + pose[2];
+projective.c:  y[0] = pose[3] * model->lx + pose[4] * model->ly + pose[5];
+projective.c:  div = pose[6] * model->lx + pose[7] * model->ly + 1.0;
+projective.c:  x[1] = pose[0] * model->ux + pose[1] * model->ly + pose[2];
+projective.c:  y[1] = pose[3] * model->ux + pose[4] * model->ly + pose[5];
+projective.c:  div = pose[6] * model->ux + pose[7] * model->ly + 1.0;
+projective.c:  x[2] = pose[0] * model->ux + pose[1] * model->uy + pose[2];
+projective.c:  y[2] = pose[3] * model->ux + pose[4] * model->uy + pose[5];
+projective.c:  div = pose[6] * model->ux + pose[7] * model->uy + 1.0;
+projective.c:  x[3] = pose[0] * model->lx + pose[1] * model->uy + pose[2];
+projective.c:  y[3] = pose[3] * model->lx + pose[4] * model->uy + pose[5];
+projective.c:  div = pose[6] * model->lx + pose[7] * model->uy + 1.0;
+projective.c:    //length[i] /= model->length[i % 2];
+projective.c:    length[i] *= model->length[i % 2];
+projective.c:  scterm *= ((double) model->size)/4.0;
+qt_heuristic.c:    match->error = problem->model->size - 4.0;
+qt_heuristic.c:      k = randint(problem->model->size-1) + 1;
+qt_heuristic.c:	j = (j + 1) % problem->model->size;
+ransac.c:  rc-> mtaken = malloc_array(char,problem->model->size);
+ransac.c:  rc->dist_table = malloc_array(double*,problem->model->size);
+ransac.c:  for (i = 0; i < problem->model->size; i++) 
+ransac.c:  rc->trset = allocate_pointset(problem->model->size);
+ransac.c:  else pairs = problem->model->size * 0.75;
+ransac.c:  ms = problem->model->size;
+similarity.c:  sc = max(sc-scale,0.0) * ((double)model->size/4.0);
