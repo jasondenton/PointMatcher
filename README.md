@@ -1,25 +1,27 @@
-http://greatpanic.com/pntmatch.html
+# Command Line 2D Projective Point Matcher 
 
-Building the program
+The Paper: 
+[Two Dimensional Projective Point Matching](https://github.com/jasondenton/Publications/blob/main/2dpntmatch.pdf)
+
+## Building the program
 
 This is research code. Although it should generally work, neither the
 code nor the binaries it produces are meant to do anything but support
 my own research efforts. This code is heavily optimized for speed, and
 intended to be used in batch systems running a large number of trials.
 
-The file config.inc controls the building of the program. Normally
-this file should be created by running the configure script. The make
-files understand OS X, FreeBSD, and Linux.
+## Setup 
 
-Setup 
+The program can be built using 'make'. See the comments in the Makefle
+for configuration details. In particular, the provide Makefile is set
+to build on a MacOS system with libjpeg installed from homebrew.
 
-Run configure and then make from the src directory to build the
-program. Run make from the expr directory to have it create soft links
+Run make from the expr directory to have it create soft links
 to the binaries and all provided data files. This provides a convinent
 way to separate data and binaries and setup an area for research
 results.
 
-Running the program
+## Running the program
 
 The main program is "pntmatcher". Run the program without arguments
 for instructions. Invoking this program runs the key feature local
@@ -71,7 +73,7 @@ variable. Systems with multi-threading processors, such as Intel's HTT
 feature, should set the number of processors to match the number of
 number physical processors.
 
-Problem file format
+## Problem file format
 
 The best way to write problem description files is to use one of the
 provided examples. The model and data fields specify the model and

@@ -182,7 +182,6 @@ int local_search_quick_step(PntMatchProblem problem, Match sol, int prev,
     double* scratch;
     short* sold;
     char* paired;
-    int pairs;
     
     modelx = problem->model->x;
     modely = problem->model->y;
@@ -196,7 +195,6 @@ int local_search_quick_step(PntMatchProblem problem, Match sol, int prev,
     save = ch->save;
     scratch = ch->scratch;
     paired = ch->paired;
-    pairs = ch->pairs;
     
     bestvalue = sol->error;
     problem->pose_from_partial(partial,ch->extra_pose);

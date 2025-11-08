@@ -54,12 +54,10 @@ double fitting_error(PntMatchProblem problem, Match match,
 
   PointSet model;
   PointSet data;
-  Pose pose;
 
   //grab and store model/data sets. save repeated offset from problem
   model = problem->model;
   data = problem->data;
-  pose = match->pose;
 
   for (i = 0; i < match->size; i++) {
     // grab and store model/data pair

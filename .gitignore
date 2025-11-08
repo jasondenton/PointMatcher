@@ -1,0 +1,8 @@
+.DS_Store
+*.o
+*.dSYM
+ *.gcda
+*.gcno
+ *.a
+pntmatcher
+markpnts
